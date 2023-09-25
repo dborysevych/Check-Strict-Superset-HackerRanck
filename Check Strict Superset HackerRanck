@@ -1,0 +1,10 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+
+setA = set(map(int, input().split()))
+subsetB = set()
+count = int(input())
+
+for i in range(count):
+    subsetB.update(map(int, input().split()))
+    
+print(subsetB.difference(setA) == set()) 
